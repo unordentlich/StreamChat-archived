@@ -1,0 +1,10 @@
+{
+  "uuid": "%uuid%",
+  "name": "StreamChat+",
+  "mainClass": "de.stornierung.streamchat.StreamChat",
+  "description": "Never tab out of your full screen again! StreamChat+ shows you your Twitch chat in Minecraft.",
+  "author": "Stornierung",
+  "icon": "https://i.imgur.com/OphUD15.png",
+  "category": 2,
+  "version": 1
+}
