@@ -67,7 +67,7 @@ public class StreamChat extends LabyModAddon {
     protected void fillSettings(List<SettingsElement> subSettings) {
         /* HEADER */
         subSettings.add(new HeaderElement("§7— §eStream§7Chat§6§l+ §7—", 2));
-        subSettings.add(new HeaderElement("§7Support? §8» §ejonas_#9839"));
+        subSettings.add(new HeaderElement("§7Support? §8» §ejonas#6789"));
 
         /* ENABLED TOGGLE */
         subSettings.add( new BooleanElement( "Enabled",
