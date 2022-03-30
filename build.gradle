@@ -12,7 +12,13 @@ buildscript {
         classpath 'net.minecraftforge.gradle:ForgeGradle:2.1-SNAPSHOT'
     }
 }
+
+plugins {
+     id "com.github.johnrengelman.shadow" version "4.0.4"
+}
+
 apply plugin: 'net.minecraftforge.gradle.forge'
+apply plugin: 'com.github.johnrengelman.shadow'
 
 /*
 // for people who want stable - not yet functional for MC 1.8.8 - we require the forgegradle 2.1 snapshot
@@ -39,6 +45,9 @@ minecraft {
 }
 
 dependencies {
+    implementation files('libs/lm_api_mc1.8.9.jar')
+    shadow files('libs/pircbot.jar')
+
     // you may put jars on which you depend on in ./libs
     // or you may define them like so..
     //compile "some.group:artifact:version:classifier"
@@ -86,4 +95,13 @@ reobf {
     jar {
         useNotchSrg()
     }
+}
+
+configurations {
+    shadow
+    implementation.extendsFrom shadow
+}
+
+shadowJar {
+    configurations = [project.configurations.shadow]
 }
