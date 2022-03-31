@@ -13,8 +13,8 @@ import static de.stornierung.streamchat.StreamChat.*;
 public class TwitchBot extends PircBot {
 
     public static void startBot() {
-        if(enabled) {
-            if(twitchenabled) {
+        if (enabled) {
+            if (twitchenabled) {
                 bot = new TwitchBot();
                 bot.setVerbose(true);
                 try {
@@ -25,7 +25,7 @@ public class TwitchBot extends PircBot {
                 } catch (IrcException e) {
                     token_working = false;
                 }
-                bot.joinChannel("#" + twitchchannel.toLowerCase());
+                bot.joinChannel("#" + twitchChannel.toLowerCase());
             }
         }
     }
@@ -41,9 +41,9 @@ public class TwitchBot extends PircBot {
 
     @Override
     public void onMessage(String channel, String sender, String login, String hostname, String message) {
-        if(message.equalsIgnoreCase("!server")) {
-            if(StreamChat.server_cmd) {
-                if(LabyMod.getInstance().getCurrentServerData() != null) {
+        if (message.equalsIgnoreCase("!server")) {
+            if (StreamChat.server_cmd) {
+                if (LabyMod.getInstance().getCurrentServerData() != null) {
                     bot.sendMessage(channel, LabyMod.getInstance().getPlayerName() +
                             " plays on " + LabyMod.getInstance().getCurrentServerData().getIp());
                 } else {
@@ -51,21 +51,21 @@ public class TwitchBot extends PircBot {
                             " isn't playing on any server at this moment...");
                 }
             }
-        } else if(message.equalsIgnoreCase("!version")) {
-            if(StreamChat.version_cmd) {
+        } else if (message.equalsIgnoreCase("!version")) {
+            if (StreamChat.version_cmd) {
                 bot.sendMessage(channel, LabyMod.getInstance().getPlayerName()
                         + " plays with Minecraft " + ForgeVersion.getTarget());
             }
-        } else if(message.equalsIgnoreCase("!name")) {
-            if(StreamChat.name_cmd) {
+        } else if (message.equalsIgnoreCase("!name")) {
+            if (StreamChat.name_cmd) {
                 bot.sendMessage(channel, "The streamer's ingame name is "
                         + LabyMod.getInstance().getPlayerName());
             }
         } else {
             if (StreamChat.twitchenabled) {
-                    LabyMod.getInstance().displayMessageInChat(StreamChat.prefix.replace("%user%", sender)
-                            .replace("%message%", message).replace("@" + StreamChat.twitchchannel,
-                                    "§l@" + StreamChat.twitchchannel));
+                LabyMod.getInstance().displayMessageInChat(StreamChat.prefix.replace("%user%", sender)
+                        .replace("%message%", message).replace("@" + StreamChat.twitchChannel,
+                                "§l@" + StreamChat.twitchChannel));
             }
         }
     }
