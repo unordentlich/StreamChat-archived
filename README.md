@@ -63,7 +63,7 @@ Since LabyMod is planning to release a completely new Addon-Library with the new
         </tr>
         <tr>
             <td>Interact with your StreamChat through the Ingame chat</td>
-            <td>🎉 Ready for Release</td>
+            <td>💖 Released</td>
             <td align="center"><b>v2.0</b></td>
         </tr>
         <tr>
