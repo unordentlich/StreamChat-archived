@@ -18,7 +18,7 @@ Since LabyMod is planning to release a completely new Addon-Library with the new
 ![image](https://user-images.githubusercontent.com/56507045/161529754-3eb0d11b-9356-442a-a1ae-f4a2ecaa1bf6.png)
 
 <br>
-<b>Step 2</b> › If you're asked to restart your game, please confirm this to activate the addon correctly. Now head over to the configuration by clicking on the small `⚙️` icon.
+<b>Step 2</b> › If you're asked to restart your game, please confirm this to activate the addon correctly. Now head over to the configuration by clicking on the small <code>⚙️</code> icon.
 
 ![image](https://user-images.githubusercontent.com/56507045/161530076-aa8f9c4d-ba76-4bf2-8992-cb773aab4dba.png)
 
@@ -28,7 +28,7 @@ Since LabyMod is planning to release a completely new Addon-Library with the new
 ![image](https://user-images.githubusercontent.com/56507045/161529883-80ba4b66-f764-4d7e-a8a0-be8220be2663.png)
 
 <br>
-<b>Step 4</b> › To connect your LabyMod client to your Twitch account, please visit <a href="https://twitchapps.com/tmi"><b>this link</b></a>, log in to your twitch account and copy the generated token from the input field.
+<b>Step 4</b> › To connect your LabyMod client to your Twitch account, please visit <a href="https://twitchapps.com/tmi"><b>this link</b></a>, log in to your twitch account and copy the <b>whole</b> generated token from the input field.
 
 ![image](https://user-images.githubusercontent.com/56507045/161530452-ffa160b3-de7f-4418-bb7e-c7871ec0dd34.png)
 
